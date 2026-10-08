@@ -1,0 +1,69 @@
+{
+  "observed_local_time": "2026-10-04T06:38:24",
+  "apk_source": "<外部原始目录>/crosscore_3.3.0/base.apk",
+  "apk_baseline": "00-official/base.apk",
+  "apk": {
+    "bytes": 2074054180,
+    "sha256": "215ed1ad84e08f6a76f4b704d0ecd8ff27acf1ddcc713944ba618bf146ada299",
+    "md5": "ba6dc1bb1624cbf73aa9b0418c051912"
+  },
+  "serial": "127.0.0.1:16384",
+  "game_launched_by_collector": false,
+  "network_settings_modified": false,
+  "official_server_requests": false,
+  "pack_count": 93,
+  "zip_entries": 772,
+  "device_commands": {
+    "identity": {
+      "command": "id; getprop ro.product.cpu.abi; getprop ro.build.version.release",
+      "exit_code": 0
+    },
+    "package": {
+      "command": "dumpsys package com.megagame.crosscore",
+      "exit_code": 0
+    },
+    "idle-network": {
+      "command": "ss -tnp",
+      "exit_code": 0
+    },
+    "proxy": {
+      "command": "settings get global http_proxy",
+      "exit_code": 0
+    },
+    "pid": {
+      "command": "pidof com.megagame.crosscore",
+      "exit_code": 1
+    },
+    "root-files": {
+      "command": "find /sdcard/Android/data/com.megagame.crosscore/files -maxdepth 1 -type f",
+      "exit_code": 0
+    },
+    "cache-files": {
+      "command": "find /data/data/com.megagame.crosscore/cache -maxdepth 2 -type f",
+      "exit_code": 0
+    }
+  },
+  "pulls_succeeded": 122,
+  "pulls_failed": 0,
+  "device_metadata": {
+    "bytes": 9306852,
+    "sha256": "0c6ab6efa252b09630580fa51f5a95ebeba087fa43f2fa7259ab59c6b4962f8c",
+    "md5": "5e731b2a9c3f5ad6dc09f3c3b5b2063f",
+    "magic": "0xFAB11BAF",
+    "version": 31,
+    "standard_magic": true
+  },
+  "python": {
+    "executable": "<python>",
+    "version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "available_modules": {
+      "UnityPy": false,
+      "Crypto": false,
+      "androguard": false,
+      "google.protobuf": false,
+      "frida": false,
+      "mitmproxy": false,
+      "requests": false
+    }
+  }
+}
