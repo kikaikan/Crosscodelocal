@@ -1,4 +1,4 @@
-# CrossCore 本地部署服务端实现 _（Crosscodelocat / crosscore-ps）_
+# CrossCore 本地部署服务端实现 _（Crosscodelocal / crosscore-ps）_
 
 官方停服后，用你自己合法持有的客户端副本在本地离线游玩的实现。
 
